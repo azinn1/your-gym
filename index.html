@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourGYM</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Bem vindo(a) a YourGYM, MUTANTE!</h1>
+        <form id="exercicioForm">
+            <label for="nome_exercicio" style="display: none;">Nome do Exercício:</label>
+            <input type="text" id="nome_exercicio" placeholder="Nome do Exercício" required>
+
+            <label for="grupo_muscular" style="display: none;">Grupo Muscular:</label>
+            <input type="text" id="grupo_muscular" placeholder="Grupo Muscular" required>
+
+            <label for="quantidade_series" style="display: none;">Quantidade de Séries:</label>
+            <input type="number" id="quantidade_series" placeholder="Quantidade de Séries" min="1" required>
+
+            <label for="quantidade_repeticoes" style="display: none;">Quantidade de Repetições:</label>
+            <input type="number" id="quantidade_repeticoes" placeholder="Quantidade de Repetições" min="1" required>
+
+            <button type="button" id="adicionar">Adicionar</button>
+        </form>
+    </header>
+    <main>
+        <div class="divTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome do Exercício</th>
+                        <th>Grupo Muscular</th>
+                        <th>Séries</th>
+                        <th>Repetições</th>
+                        <th class="acao">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
